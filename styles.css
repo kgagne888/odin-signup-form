@@ -55,6 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* MODERN CSS RESET ENDS HERE */
 
+
+/* Main Layout */
 .container {
     display: flex; 
     flex-direction: row; 
@@ -65,8 +67,30 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
     background-image: url('images/coffee-background.jpg');
     background-size: cover;
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
 }
 
 .col2 {
     flex: 2;
+}
+
+/* Left column styling */
+.logo-container {
+    display: flex;
+    flex-direction: row; 
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute; 
+    top: 30vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: black;
+    font-family: Delius;
+}
+
+.logo {
+    width: 15%;
 }

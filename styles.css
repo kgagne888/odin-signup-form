@@ -1,3 +1,8 @@
+:root {
+    --padding: 5px 50px;
+    --brown: rgb(150, 75, 0);
+}
+
 /* MODERN CSS RESET START HERE */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -55,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* MODERN CSS RESET ENDS HERE */
 
+* {
+    font-family: Delius;
+}
+
 
 /* Main Layout */
 .container {
@@ -88,9 +97,84 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
     padding: 10px;
     color: black;
-    font-family: Delius;
 }
 
 .logo {
     width: 15%;
+}
+
+/* Right column styling */
+.col2 {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+
+.col2 > * {
+    padding: var(--padding);
+}
+
+form {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem; 
+    align-items: start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px 20% 20px 50px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.18);
+}
+
+.col2 p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 10vh;
+}
+
+.input {
+    display: flex; 
+    flex-direction: column;
+    width: 80%;
+}
+
+label {
+    text-transform: uppercase; 
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+}
+
+input:focus {
+    border: 2px solid var(--brown);
+    outline: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+input:invalid:user-invalid {
+    border: 2px solid red; 
+    outline: none;
+}
+
+button {
+    background-color: var(--brown);
+    color: white; 
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+a {
+    color: var(--brown);
+    font-weight: bold; 
+    text-decoration: none;
 }

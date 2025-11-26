@@ -17,7 +17,41 @@
                 <h1 class="logo-words">Order Coffee Beans</h1>
             </div>
         </div>
-        <div class="col2"></div>
+        <div class="col2">
+            <p>We make exclusive coffee beans from Europe that are roasted to perfection. This form will get you our subscription orders ordered to your door monthly. <br><br>Note: this is not a real service.</p>
+            <div class="form-container">
+                <h3>Sign Up to Order Now</h3>
+                <form id="registrationform">
+                    <div class="input">
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" type="text" name="firstname" required>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" type="text" name="lastname" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter phone as 123-456-7890" required>
+                        <small>Format: 123-456-7890</small>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input id="confirmpassword" type="password" name="confirmpassword" required>
+                    </div>
+                </form>
+            </div>
+            <div><button form="registrationform">Create Account</button></div>
+            <p>Already have an account? <a href="">Log In</a></p>
+        </div>
     </div>
 </body>
 </html>
